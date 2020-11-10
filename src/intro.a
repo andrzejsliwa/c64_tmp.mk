@@ -1,0 +1,20 @@
+; define all constants
+clear  = $e544
+chrout = $ffd2
+
+.include "src/macros.i"
+
+#basicup
+
+start   jsr clear
+		ldx #0
+
+print   lda msg, x
+		cmp #0
+		beq end
+		jsr chrout
+		inx
+		jmp print
+end     rts
+
+msg     .null "hello world !!!"
