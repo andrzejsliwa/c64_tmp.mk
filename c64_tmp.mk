@@ -6,9 +6,9 @@ DISK ?= $(DISK_DIR)/$(DISK_NAME).d64
 BINARY_DIR = bin
 
 VICE_OPTS     ?=
-VICE_EXE      ?= x64sc
-VICE_PATH     ?= /usr/local/bin/$(VICE_EXE)
-DEBUGGER_PATH ?= /Applications/C64\ Debugger.app/Contents/MacOS/C64Debugger
+VICE_EXE      ?= x64sc.exe
+VICE_PATH     ?= /mnt/c/SDL2VICE-3.9-win64/$(VICE_EXE)
+DEBUGGER_PATH ?= /mnt/c/c64Debugger/C64Debugger.exe
 DEBUGGER_OPTS ?= -pass -unpause -autojmp -wait 250
 
 ASSEMBLER = $(BINARY_DIR)/tmpx
